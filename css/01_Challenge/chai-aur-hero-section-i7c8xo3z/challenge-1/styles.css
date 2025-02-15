@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+  color: white;
+  background-color: #0a0a0a;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 20px;
+  background: rgb(27,9,52);
+  background: linear-gradient(180deg, rgba(27,9,52,1) 0%, rgba(0,0,0,1) 80%);
+ }
+
+.announcement {
+ 
+  
+}
+
+.announcement-link {
+  /*  */
+  background-color: rgba(96, 67, 123, 0.3);
+  border-radius: 20px;
+  border: .5px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  text-decoration: none;
+  padding: 12px 8px;
+}
+
+.announcement-link:hover {
+  /* border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: 0.3s; */
+  background-color: rgba(96, 67, 123, 0.5);
+}
+
+.announcement-text {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+}
+
+.announcement-button {
+  background-color: #31243d;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+
+}
+
+.hero-content {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.hero-description {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+  width: 80%;
+}
+
+.cta-button {
+  background: rgb(55,123,203);
+  background: linear-gradient(180deg, rgb(67, 71, 184) 50%, rgba(136,25,126,0.1) 100%);
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: white;
+  /* border: .5px solid rgba(255, 255, 255, 0.1); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.cta-button:hover {
+  /* border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: 0.3s; */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 1rem;
+  }
+
+  .announcement-link {
+    font-size: 0.75rem;
+  }
+
+  .hero-content {
+    padding: 0 1rem;
+  }
+}
