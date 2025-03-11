@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kabab Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container" id="boardContainer">
+        <div id="todo-board" class="board">
+            <h4>Todo</h4> 
+            <div draggable="true" class="item">learn react</div>
+            <div draggable="true" class="item">learn javascript</div>
+        </div>
+        <div class="board">
+            <h4>In Progress</h4>
+        </div>
+        <div class="board">
+            <h4>Done</h4>
+        </div>
+
+        <button id="addBoardBtn" class="addBoardBtn"> + </button>
+    </div>
+
+    <!-- form -->
+    <div class="form-container-hidden" id="formContainer">
+        <form class="formContainer">
+            <input type="text" name="" id="form-input" placeholder="Enter title">
+            <input type="submit" value="Add" id="addtitleSubmit">
+        </form>
+    </div>
+
+    <button id="add-task-btn">Add Task</button>
+    <script src="script.js"></script>
+    
+</body>
+</html>
